@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="./public/style.css">
 </head>
 <body>
     <header>
@@ -15,21 +15,21 @@
     <section class="cuerpo__encriptador">
         
         <div>
-        <form class="cuadro__texto" action="/public/script.js">
+        <form class="cuadro__texto" action="#" method="POST" name="ingreso_de_texto" id="ingreso_de_texto">
           <p><label for="">Nota: Solo caracteres en miniscula y no caracter especiales</label></p>
-          <textarea class="cuadro__text"id="cuadro__encriptacion" name="encriptacion" rows="15" cols="35" placeholder="Escriba el texto aqui"></textarea>
+          <textarea class="input-text" type="text" id="cuadro__encriptacion" name="encriptacion" rows="15" cols="35" placeholder="Escriba el texto aqui"></textarea>
           <br>
           
         </form>
         </div>
         <div>
-        <img src="/assets/Muñeco.png">
+        <img src="./assets/Muñeco.png">
         </div>
         <p></p>
     </section>
     <section class="botones">
-        <a class="encriptar" href="">Encriptar</a>
-        <a class="desencriptar" href=""> Desencriptar</a>
+        <button onclick="encriptar()" id="encriptar" class="encriptar" type="submit" href="texencriptado.html">Encriptar</button>
+        <button onclick="desencriptar()" id="desencriptar"class="desencriptar" href=""> Desencriptar</button>
     </section>
 
 
@@ -37,6 +37,6 @@
 
     </footer>
 
-    <script src="/public/script.js"></script>
+    <script src="./public/script.js"></script>
 </body>
 </html>
