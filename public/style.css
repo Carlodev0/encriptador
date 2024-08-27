@@ -15,7 +15,11 @@
     justify-content: left;
     flex-direction: row;
   
-
+}
+.form_box{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
 }
 .cuadro__encriptado{
     resize: none;
