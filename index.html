@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header__titulo"> Encriptador de Texto </h1>
+    </header>
+    <h1>Escriba el texto a encriptar</h1>
+    <section class="cuerpo__encriptador">
+        
+        <div>
+        <form class="cuadro__texto" action="/public/script.js">
+          <p><label for="">Nota: Solo caracteres en miniscula y no caracter especiales</label></p>
+          <textarea class="cuadro__text"id="cuadro__encriptacion" name="encriptacion" rows="15" cols="35" placeholder="Escriba el texto aqui"></textarea>
+          <br>
+          
+        </form>
+        </div>
+        <div>
+        <img src="/assets/Muñeco.png">
+        </div>
+        <p></p>
+    </section>
+    <section class="botones">
+        <a class="encriptar" href="">Encriptar</a>
+        <a class="desencriptar" href=""> Desencriptar</a>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+    <script src="/public/script.js"></script>
+</body>
+</html>

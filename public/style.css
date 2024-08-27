@@ -1,0 +1,73 @@
+:root{
+    --color-secundario: #0A3871;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+
+    --fuente: "Inter", sans-serif;
+}
+
+.header__titulo{
+
+    color: var(--color-secundario);
+}
+.cuerpo__encriptador{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+  
+
+}
+.cuadro__encriptado{
+    resize: none;
+    max-width: 50%;
+}
+.encriptar{
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 1%;
+    border-color: var(--color-negro);
+    text-decoration: none;
+    border-radius: 5%;
+    border: 2px solid var(--color-negro);
+
+}
+.desencriptar{
+    padding: 1%;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    text-decoration: none;
+    border-radius: 5%;
+    border: 2px solid var(--color-negro);
+}
+.botones{
+
+    display: flex;
+    justify-content: left;
+    gap: 24px;
+    
+       
+    
+}
+@media (max-width: 1200px) {
+
+    }
+    .cuadro__text{
+        resize: none;
+    }
+    
+@media (max-width: 800px) {
+
+    .cuerpo__encriptador{
+        width: auto;
+        flex-direction: column;
+    } 
+      .cuadro__text{
+        resize: vertical;
+    }
+}
+@media (max-width: 300px) {
+
+    .cuadro__text{
+        resize: vertical;
+    }
+}
