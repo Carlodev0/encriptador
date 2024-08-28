@@ -6,6 +6,9 @@
 
     --fuente: "Inter", sans-serif;
 }
+*{
+    font-family: var(--fuente);
+}
 .main{
     background-color: var(--background);
 }
@@ -128,6 +131,7 @@
 
 }
 .footer{
+    gap: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
