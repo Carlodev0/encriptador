@@ -1,31 +1,123 @@
 :root{
+    --background: #d1e7f0;
     --color-secundario: #0A3871;
     --color-blanco: #FFFFFF;
     --color-negro: #000000;
 
     --fuente: "Inter", sans-serif;
 }
-
+.main{
+    background-color: var(--background);
+}
+.titulo-formulario{
+    color: var(--color-secundario);
+    justify-content: center;
+    font-family: var(--fuente);
+}
+.head{
+    background-color: var(--color-secundario);
+    padding: none;
+    border: none;
+    margin: none;
+    width: 100%;
+}
 .header__titulo{
 
-    color: var(--color-secundario);
+    color: var(--color-blanco);
+    margin: none;
+    padding: none;
+    text-align: center;
 }
+
 .cuerpo__encriptador{
     display: flex;
-    justify-content: left;
     flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4rem;
+    align-items: center;
+    
+}
+.cuadro_encriptado{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+   
+}
+.text__box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   
+}
+.division__bnt{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
 }
 .form_box{
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.texto__input{
+    width: 15rem;  /* Ancho del input */
+    height: 25rem;  /* Altura del input */
+    font-size: 18px;  /* Tamaño de la fuente */
+    padding: 10px;  /* Espaciado interno */
+    border: 2px solid #ccc;  /* Borde del input */
+    border-radius: 5px;  /* Bordes redondeados */
+}
+.text-input-salida{
+    width: 300px;  /* Ancho del input */
+    height: 250px;  /* Altura del input */
+    font-size: 18px;  /* Tamaño de la fuente */
+    padding: 10px;  /* Espaciado interno */
+    border: 2px solid #ccc;  /* Borde del input */
+    border-radius: 5px;  /* Bordes redondeados */
+}
+.imagen{
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+}
+.division__bnt{
+    display: flex;
+    padding-top: 15%;
     flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1.5rem
 }
-.cuadro__encriptado{
-    resize: none;
-    max-width: 50%;
+.mensaje_encriptado{
+    display: flex;
+    flex-direction: column;
 }
-.encriptar{
+.btn1{
+    font-size: large;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 10%;
+    border-color: var(--color-negro);
+    text-decoration: none;
+    border-radius: 5%;
+    border: 2px solid var(--color-negro);
+    height: 2%;
+}
+.btn2{
+    font-size: large;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    padding: 10%;
+    border-color: var(--color-negro);
+    text-decoration: none;
+    border-radius: 5%;
+    border: 2px solid var(--color-negro);
+    height: 2%;
+    width: 100%;
+}
+
+.btn__copiar{
+
     background-color: var(--color-secundario);
     color: var(--color-blanco);
     padding: 1%;
@@ -35,23 +127,26 @@
     border: 2px solid var(--color-negro);
 
 }
-.desencriptar{
-    padding: 1%;
-    background-color: var(--color-blanco);
-    color: var(--color-negro);
-    text-decoration: none;
-    border-radius: 5%;
-    border: 2px solid var(--color-negro);
-}
-.botones{
-
+.footer{
     display: flex;
-    justify-content: left;
-    gap: 24px;
-    
-       
-    
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    text-align: center;
 }
+.github{
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--fuente);
+}
+.imagen_git{
+    
+    height: 2rem;
+    width: 2rem;
+}
+
 @media (max-width: 1200px) {
 
     }

@@ -8,49 +8,61 @@
     <link rel="stylesheet" href="./public/style.css">
 </head>
 <body>
-    <header>
+    <header class="head">
         <h1 class="header__titulo"> Encriptador de Texto </h1>
     </header>
+    <main class="main">
     <h1>Escriba el texto a encriptar</h1>
     <section class="cuerpo__encriptador">
         
+    <div class="cuerpo__encriptador"> 
         <div>
-        <form class="cuadro__texto" action="#" method="POST" name="ingreso_de_texto" id="ingreso_de_texto">
-          <p><label for="">Nota: Solo caracteres en miniscula y no caracter especiales</label></p>
-          <textarea class="input-text" type="text" id="cuadro__encriptacion" name="encriptacion" rows="15" cols="35" placeholder="Escriba el texto aqui"></textarea>
-          <br>
-          
+        <form class="text__box">
+            <label class="titulo-formulario"for="input-texto">Solo letras minúsculas, <br>ni caracterres especiales</label>
+            <input class="texto__input" type="text" name="texto input" id="texto_imput" placeholder="Escriba el texto a Encriptar">
+            
+            <div class="division__bnt">
+            <input class="btn1" type="button" value="encriptar" id="btn-encriptar">
+            <input class="btn2" type="button" value="desencriptar" id="btn-desencriptar">     
+            </div>
+
         </form>
         </div>
         <div>
-        <img src="./assets/Muñeco.png">
+        <div class="cuadro_encriptado">
+            
+            <img class="imagen" src="./assets/Muñeco.png">
+            
         </div>
-        <p></p>
-    </section>
-    <section class="botones">
-        <input onclick="encriptar()" id="encriptar" class="encriptar" type="submit" href="">Encriptar</input>
-        <input onclick="desencriptar()" id="desencriptar"class="desencriptar" href=""> Desencriptar</input>
-    </section>
 
-    <main class="main">
-        <section class="form_box">
-          <form action="">
-            <label for="input-texto">Solo letras minúsculas, sin acento</label>
-            <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
-            <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
-            <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
-          </form>
-        </section>
-      
-        <section class="msg box">
-          <h2 id="">Mensaje encriptada:</h2>
-          <input class="text-input-salida" type="text" id="msg">
-          <input class="btn" type="button" value="copiar" id="btn-copy">
-        </section>
+        <div class="mensaje_encriptado">
+            <h2 id="">Mensaje Encriptado:</h2>
+            <input class="text-input-salida" type="text" id="msg" placeholder="mensaje encriptado">
+            <input class="btn__copiar" type="button" value="copiar" id="btn-copiar">
+        </div>
+        </div>
+             
     
+                
+       
+        
+    </div>
+    </main>
+    
+        
       
-    <footer>
-
+       
+      
+    <footer class="footer">
+        <div>
+        <H1>Diseñado Por Carlos Lopez</H1>
+        </div>
+        <div>
+        <a class="github" href="https://github.com/Carlodev0">Github</a>
+        </div>
+        <div>
+        <img class="imagen_git"src="./assets/github.png" alt="logo-github">
+        </div>
     </footer>
 
     <script src="./public/script.js"></script>
